@@ -1,0 +1,10 @@
+<h1>Detalhes de: <%= @person.name %></h1>
+<p>
+	<b>Sexo: </b> <%= @person.gender %>
+</p>
+
+<p>
+	<b>Inativo: </b> <%= @person.inactive ? "Sim" : "Não" %>
+</p>
+
+<%= link_to "Voltar", people_path %> | <%= link_to "Editar", edit_person_path %>

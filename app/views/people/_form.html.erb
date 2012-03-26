@@ -1,0 +1,9 @@
+<%= simple_form_for(@person, :html => {:novalidate => true}) do |f| %>
+	<%= f.input :name %>
+	<%= f.input :gender, :collection => ["Masculino", "Feminino"] %>
+	<%= f.input :inactive %>
+	<%= f.submit "Gravar" %>
+<% end %>
+<p>
+<%= link_to "Voltar" , people_path %>
+</p>
